@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ToothPlanet Dental Clinic – From basic tooth care to major dental surgeries. Book an appointment today!" />
+  <title>ToothPlanet Dental Clinic</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-8GfG3x2P2T3p33pQZ2Z4VtWkF3p5q7WQ4pX7XfVfuhjz3v8v4INv7V5G4CkYa6dGv5q8IHN6F1c8b1YdD4Jd2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="header" id="home">
+    <div class="container">
+      <div class="logo">Tooth<span>Planet</span></div>
+      <nav class="nav" id="navMenu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Profile</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Rx Charges</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#appointment" class="btn-cta">Make an Appointment</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-label="Hero banner">
+    <div class="container hero__content">
+      <h1>Your Smile, Our Priority</h1>
+      <p>Comprehensive dental care from basic cleaning to complex surgeries – all under one roof.</p>
+      <a href="#appointment" class="btn-primary">Book an Appointment</a>
+    </div>
+  </section>
+
+  <!-- Stats / Why Choose Us -->
+  <section class="stats" aria-label="Clinic statistics">
+    <div class="container stats__grid">
+      <div class="stat">
+        <h2>10K+</h2>
+        <p>Happy Patients</p>
+      </div>
+      <div class="stat">
+        <h2>15+</h2>
+        <p>Years of Experience</p>
+      </div>
+      <div class="stat">
+        <h2>4.9/5</h2>
+        <p>Clinic Rating</p>
+      </div>
+      <div class="stat">
+        <h2>24/7</h2>
+        <p>Emergency Support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Profile -->
+  <section class="about" id="about" aria-label="About ToothPlanet">
+    <div class="container about__grid">
+      <div class="about__img">
+        <img src="assets/img/clinic.jpg" alt="ToothPlanet Clinic" />
+      </div>
+      <div class="about__content">
+        <h2>About ToothPlanet</h2>
+        <p>
+          ToothPlanet is a modern dental clinic offering a full spectrum of dental treatments – from routine check-ups and cleanings to advanced surgical procedures. Our clinic is centrally located for easy access and is designed with patient comfort in mind.
+        </p>
+        <p>
+          Under the leadership of Dr. Jane Doe (Chief Dental Surgeon) and a dedicated team of specialists, we personalize treatments for every patient. Meet our friendly staff who bring years of expertise and a passion for oral health.
+        </p>
+        <ul class="about__highlights">
+          <li><i class="fa-solid fa-tooth"></i> Comprehensive Care</li>
+          <li><i class="fa-solid fa-location-dot"></i> Easy-to-Reach Location</li>
+          <li><i class="fa-solid fa-user-doctor"></i> Experienced Specialists</li>
+          <li><i class="fa-solid fa-heart"></i> Patient-Centric Approach</li>
+        </ul>
+        <p class="thanks">Thank you for visiting our profile – we look forward to keeping your smile bright!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services" aria-label="Our dental services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p class="section-intro">From preventive care to oral surgery, we’ve got you covered.</p>
+      <div class="services__grid">
+        <div class="service-card">
+          <i class="fa-solid fa-tooth"></i>
+          <h3>Basic Treatments</h3>
+          <p>Exams, cleanings, fillings, fluoride treatments, sealants.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-teeth"></i>
+          <h3>Cosmetic Dentistry</h3>
+          <p>Teeth whitening, veneers, bonding and smile makeovers.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-tooth-crack"></i>
+          <h3>Restorative Care</h3>
+          <p>Crowns, bridges, dentures, implants and root canals.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>Oral Surgery</h3>
+          <p>Extractions, wisdom tooth removal, periodontal surgeries.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-child"></i>
+          <h3>Pediatric Dentistry</h3>
+          <p>Gentle care for kids – preventing cavities and building habits.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-user-shield"></i>
+          <h3>Emergency Dental Care</h3>
+          <p>Sudden pain or injuries? We provide rapid relief and solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials" aria-label="Testimonials">
+    <div class="container">
+      <h2>What Our Patients Say</h2>
+      <div class="testimonial__slider" id="testimonialSlider">
+        <div class="testimonial active">
+          <p>“The team at ToothPlanet is amazing. My root canal was painless and fast!”</p>
+          <h4>- Sarah M.</h4>
+        </div>
+        <div class="testimonial">
+          <p>“Clean, friendly and professional. They truly care about your smile.”</p>
+          <h4>- John D.</h4>
+        </div>
+        <div class="testimonial">
+          <p>“Best dental experience ever. Highly recommend for families!”</p>
+          <h4>- Priya K.</h4>
+        </div>
+      </div>
+      <div class="testimonial__controls">
+        <button class="prev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing / Rx Charges -->
+  <section class="pricing" id="pricing" aria-label="Rx Charges">
+    <div class="container">
+      <h2>Rx Charges</h2>
+      <p class="section-intro">Transparent pricing for common treatments. Contact us for a full quote.</p>
+      <div class="pricing__grid">
+        <div class="price-card">
+          <h3>Basic Check-up</h3>
+          <p class="price">$50</p>
+          <ul>
+            <li>Examination</li>
+            <li>Cleaning</li>
+            <li>X-ray (if needed)</li>
+          </ul>
+        </div>
+        <div class="price-card popular">
+          <span class="tag">Popular</span>
+          <h3>Filling / Restoration</h3>
+          <p class="price">$120+</p>
+          <ul>
+            <li>Composite fillings</li>
+            <li>Pain management</li>
+            <li>Follow-up visit</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Root Canal</h3>
+          <p class="price">$600+</p>
+          <ul>
+            <li>Consultation & X-rays</li>
+            <li>Procedure & medication</li>
+            <li>Post-op follow-up</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Form -->
+  <section class="appointment" id="appointment" aria-label="Make an appointment">
+    <div class="container">
+      <h2>Make an Appointment</h2>
+      <p class="section-intro">Fill out the form and we’ll contact you shortly.</p>
+      <form id="appointmentForm" class="form">
+        <div class="form-group">
+          <label for="name">Full Name*</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone*</label>
+          <input type="tel" id="phone" name="phone" required placeholder="(+1) 555-123-4567" />
+        </div>
+        <div class="form-group">
+          <label for="service">Service</label>
+          <select id="service" name="service">
+            <option value="Basic Check-up">Basic Check-up</option>
+            <option value="Filling / Restoration">Filling / Restoration</option>
+            <option value="Root Canal">Root Canal</option>
+            <option value="Oral Surgery">Oral Surgery</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <div class="form-group full">
+          <label for="message">Additional Notes</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us anything we should know"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Submit</button>
+        <p class="form-status" id="formStatus" role="alert" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact" aria-label="Contact details">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <h2>Contact Us</h2>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Smile Street, Suite 101, YourCity, ST 00000</p>
+        <p><i class="fa-solid fa-phone"></i> +1 (913) 238-5283</p>
+        <p><i class="fa-solid fa-envelope"></i> hello@toothplanet.com</p>
+        <p><i class="fa-solid fa-clock"></i> Mon–Sat: 9 AM – 7 PM</p>
+      </div>
+      <div class="contact__map">
+        <!-- Replace src with your Google Map or a static image -->
+        <iframe title="ToothPlanet location" src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__flex">
+      <p>&copy; <span id="year"></span> ToothPlanet Dental Clinic. All rights reserved.</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
