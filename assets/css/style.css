@@ -405,3 +405,69 @@ input, select, textarea {
   }
   .nav li { margin-bottom: 1rem; }
 }
+/* ===================== Logo Image ===================== */
+.logo-img img {
+  height: 48px;             /* Adjust as needed */
+  width: auto;
+  display: block;
+}
+
+/* Hide old text logo if still present */
+.logo { display: none; }
+
+/* ===================== Hero Changes ===================== */
+.hero {
+  background: #f2f2f2;         /* grey background */
+  color: #333;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 70px;             /* header offset */
+  padding-bottom: 140px;        /* space for scrolling strip */
+}
+
+.hero-scroll-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #e0e0e0;          /* slightly darker grey for contrast */
+  overflow: hidden;
+  height: 120px;                 /* strip height */
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 30s linear infinite; /* adjust speed */
+}
+
+.scroll-track img {
+  height: 120px;                 /* same as strip height */
+  width: auto;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* adjust depending on number of images */
+}
+
+/* Ensure hero text stays readable */
+.hero__content h1 {
+  color: #111;
+}
+.hero__content p {
+  color: #555;
+}
+
+/* Responsive tweaks for scrolling strip */
+@media (max-width: 600px) {
+  .hero-scroll-strip { height: 90px; }
+  .scroll-track img { height: 90px; }
+}
