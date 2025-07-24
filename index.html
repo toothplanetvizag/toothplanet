@@ -17,7 +17,11 @@
   <!-- Header / Nav -->
   <header class="header" id="home">
     <div class="container">
-      <div class="logo">Tooth<span>Planet</span></div>
+      <!-- 1) LOGO IMAGE REPLACEMENT -->
+      <a href="#home" class="logo-img" aria-label="ToothPlanet home">
+        <img src="assets/img/web_logo.jpg" alt="ToothPlanet Logo" />
+      </a>
+
       <nav class="nav" id="navMenu">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -36,11 +40,26 @@
   </header>
 
   <!-- Hero Section -->
+  <!-- 2) GREY BACKGROUND + SCROLLING IMAGES FROM RIGHT TO LEFT -->
   <section class="hero" aria-label="Hero banner">
     <div class="container hero__content">
       <h1>Your Smile, Our Priority</h1>
       <p>Comprehensive dental care from basic cleaning to complex surgeries – all under one roof.</p>
       <a href="#appointment" class="btn-primary">Book an Appointment</a>
+    </div>
+
+    <div class="hero-scroll-strip" aria-hidden="true">
+      <div class="scroll-track">
+        <!-- Duplicate/loop images for seamless scroll. Replace with your clinic images -->
+        <img src="assets/img/scroll1.jpg" alt="Clinic" />
+        <img src="assets/img/scroll2.jpg" alt="Patient care" />
+        <img src="assets/img/scroll3.jpg" alt="Dental equipment" />
+        <img src="assets/img/scroll4.jpg" alt="Doctor team" />
+        <img src="assets/img/scroll1.jpg" alt="Clinic" />
+        <img src="assets/img/scroll2.jpg" alt="Patient care" />
+        <img src="assets/img/scroll3.jpg" alt="Dental equipment" />
+        <img src="assets/img/scroll4.jpg" alt="Doctor team" />
+      </div>
     </div>
   </section>
 
@@ -199,6 +218,7 @@
     <div class="container">
       <h2>Make an Appointment</h2>
       <p class="section-intro">Fill out the form and we’ll contact you shortly.</p>
+
       <form id="appointmentForm" class="form">
         <div class="form-group">
           <label for="name">Full Name*</label>
@@ -230,7 +250,9 @@
           <label for="message">Additional Notes</label>
           <textarea id="message" name="message" rows="4" placeholder="Tell us anything we should know"></textarea>
         </div>
-        <button type="submit" class="btn-primary">Submit</button>
+        
+        <!-- 3) SUBMIT BUTTON LINKS TO GOOGLE FORM -->
+        <button type="submit" class="btn-primary" id="gfSubmitBtn">Submit</button>
         <p class="form-status" id="formStatus" role="alert" aria-live="polite"></p>
       </form>
     </div>
@@ -247,7 +269,6 @@
         <p><i class="fa-solid fa-clock"></i>Mon – Sat : 10AM – 9PM</p>
       </div>
       <div class="contact__map">
-        <!-- Replace src with your Google Map or a static image -->
         <iframe title="ToothPlanet location" src="https://www.google.com/maps/place/Tooth+Planet+Laser+%26+Implant+Centre+%7C+Best+Dental+Clinic+in+Vizag/@17.7414984,83.3315942,923m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a394331b7adc4ab:0x18c46ea150e3be5e!8m2!3d17.7414984!4d83.3341691!16s%2Fg%2F11v0gzgdrr?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D" loading="lazy"></iframe>
       </div>
     </div>
