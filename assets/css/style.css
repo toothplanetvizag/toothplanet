@@ -195,3 +195,18 @@ input,select,textarea{
   .hero-scroll-strip{height:140px}
   .scroll-track img{height:140px}
 }
+
+/* ── NAV alignment patch ───────────────────────────────────── */
+.header .container { align-items: center; }          /* vertical centering */
+
+/* keep the whole list in one row and centre links vertically */
+.nav ul            { flex-wrap: nowrap; align-items: center; gap: 1rem; }
+.nav li            { display: flex;  align-items: center; white-space: nowrap; }
+
+/* links & CTA share the same baseline height */
+.nav a             { line-height: 1; }
+
+.btn-cta{          /* make the blue button line up */
+  display: inline-flex; align-items: center; white-space: nowrap;
+  padding: .6rem 1rem;  /* same as before, but prevents wrapping */
+}
