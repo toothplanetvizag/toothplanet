@@ -161,6 +161,10 @@ input,select,textarea{
 .contact__info i{color:var(--primary);margin-right:.5rem}
 .contact__map iframe{width:100%;height:300px;border:0;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
 
+/* --------------------- Additional changes to contact ----------------- */
+.contact__info a {color: var(--text);text-decoration: none;font-weight: 500;}
+.contact__info a:hover {color: var(--primary);}
+
 /* ======================= Footer ====================== */
 .footer{background:#111;color:#ccc;padding:1.2rem 0}
 .footer__flex{display:flex;justify-content:space-between;align-items:center}
