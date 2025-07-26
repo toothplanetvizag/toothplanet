@@ -185,3 +185,22 @@ input,select,textarea{
   .hero-scroll-strip{height:140px}
   .scroll-track img{height:140px}
 }
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 14px 16px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
