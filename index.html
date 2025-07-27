@@ -8,8 +8,12 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-8GfG3x2P2T3p33pQZ2Z4VtWkF3p5q7WQ4pX7XfVfuhjz3v8v4INv7V5G4CkYa6dGv5q8IHN6F1c8b1YdD4Jd2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font Awesome (correct SRI; ensures icons render) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -17,7 +21,6 @@
   <!-- Header / Nav -->
   <header class="header" id="home">
     <div class="container">
-      <!-- 1) LOGO IMAGE REPLACEMENT -->
       <a href="#home" class="logo-img" aria-label="ToothPlanet home">
         <img src="assets/img/web_logo.jpg" alt="ToothPlanet Logo" />
       </a>
@@ -27,6 +30,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">Profile</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#team">Doctors</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#pricing">Treatment Charges</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -39,8 +43,7 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <!-- 2) GREY BACKGROUND + SCROLLING IMAGES FROM RIGHT TO LEFT -->
+  <!-- Hero -->
   <section class="hero" aria-label="Hero banner">
     <div class="container hero__content">
       <h1>Your Smile, Our Priority</h1>
@@ -50,11 +53,11 @@
 
     <div class="hero-scroll-strip" aria-hidden="true">
       <div class="scroll-track">
-        <!-- Duplicate/loop images for seamless scroll. Replace with your clinic images -->
         <img src="assets/img/1.jpg" alt="Clinic" />
         <img src="assets/img/scroll2.jpg" alt="Patient care" />
         <img src="assets/img/scroll3.jpg" alt="Dental equipment" />
         <img src="assets/img/doctors_day.jpg" alt="Doctor team" />
+        <!-- duplicates for seamless loop -->
         <img src="assets/img/1.jpg" alt="Clinic" />
         <img src="assets/img/scroll2.jpg" alt="Patient care" />
         <img src="assets/img/scroll3.jpg" alt="Dental equipment" />
@@ -63,29 +66,17 @@
     </div>
   </section>
 
-  <!-- Stats / Why Choose Us -->
+  <!-- Stats -->
   <section class="stats" aria-label="Clinic statistics">
     <div class="container stats__grid">
-      <div class="stat">
-        <h2>10K+</h2>
-        <p>Happy Patients</p>
-      </div>
-      <div class="stat">
-        <h2>15+</h2>
-        <p>Years of Experience</p>
-      </div>
-      <div class="stat">
-        <h2>5/5</h2>
-        <p>Clinic Rating</p>
-      </div>
-      <div class="stat">
-        <h2>24/7</h2>
-        <p>Emergency Support</p>
-      </div>
+      <div class="stat"><h2>10K+</h2><p>Happy Patients</p></div>
+      <div class="stat"><h2>15+</h2><p>Years of Experience</p></div>
+      <div class="stat"><h2>5/5</h2><p>Clinic Rating</p></div>
+      <div class="stat"><h2>24/7</h2><p>Emergency Support</p></div>
     </div>
   </section>
 
-  <!-- About / Profile -->
+  <!-- About -->
   <section class="about" id="about" aria-label="About ToothPlanet">
     <div class="container about__grid">
       <div class="about__img">
@@ -93,17 +84,13 @@
       </div>
       <div class="about__content">
         <h2>About Tooth Planet</h2>
-        <p>
-          Tooth planet laser & implant centre is a modern dental clinic offering a full spectrum of dental treatments – from routine check-ups and cleanings to advanced surgical procedures. Our clinic is centrally located for easy access and is designed with patient comfort in mind.
-        </p>
-        <p>
-          Under the leadership of Dr. Naveen Kumar (Managing Director) and a dedicated team of specialists, we personalize treatments for every patient. Meet our friendly staff who bring years of expertise and a passion for oral health.
-        </p>
+        <p>Tooth Planet Laser &amp; Implant Centre is a modern dental clinic offering a full spectrum of dental treatments – from routine check-ups and cleanings to advanced surgical procedures. Our clinic is centrally located for easy access and is designed with patient comfort in mind.</p>
+        <p>Under the leadership of Dr. Naveen Kumar (Managing Director) and a dedicated team of specialists, we personalize treatments for every patient. Meet our friendly staff who bring years of expertise and a passion for oral health.</p>
         <ul class="about__highlights">
-          <li><i class="fa-solid fa-tooth"></i>- Comprehensive Care</li>
-          <li><i class="fa-solid fa-location-dot"></i>- Easy-to-Reach Location</li>
-          <li><i class="fa-solid fa-user-doctor"></i>- Experienced Specialists Available 24/7</li>
-          <li><i class="fa-solid fa-heart"></i>- Patient-Centric Approach</li>
+          <li><i class="fa-solid fa-tooth"></i> Comprehensive Care</li>
+          <li><i class="fa-solid fa-location-dot"></i> Easy-to-Reach Location</li>
+          <li><i class="fa-solid fa-user-doctor"></i> Experienced Specialists Available 24/7</li>
+          <li><i class="fa-solid fa-heart"></i> Patient-Centric Approach</li>
         </ul>
         <p class="thanks">Thank you for visiting our profile – we look forward to keeping your smile bright!</p>
       </div>
@@ -116,104 +103,42 @@
       <h2>Our Services</h2>
       <p class="section-intro">From preventive care to oral surgery, we’ve got you covered.</p>
       <div class="services__grid">
-        <div class="service-card">
-          <i class="fa-solid fa-tooth"></i>
-          <h3>Basic Treatments</h3>
-          <p>Exams, cleanings, fillings, fluoride treatments, sealants.</p>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-teeth"></i>
-          <h3>Cosmetic Dentistry</h3>
-          <p>Teeth whitening, veneers, bonding and smile makeovers.</p>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-tooth-crack"></i>
-          <h3>Restorative Care</h3>
-          <p>Crowns, bridges, dentures, implants and root canals.</p>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-screwdriver-wrench"></i>
-          <h3>Oral Surgery</h3>
-          <p>Extractions, wisdom tooth removal, periodontal surgeries.</p>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-child"></i>
-          <h3>Pediatric Dentistry</h3>
-          <p>Gentle care for kids – preventing cavities and building habits.</p>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-user-shield"></i>
-          <h3>Emergency Dental Care</h3>
-          <p>Sudden pain or injuries? We provide rapid relief and solutions.</p>
-        </div>
+        <div class="service-card"><i class="fa-solid fa-tooth"></i><h3>Basic Treatments</h3><p>Exams, cleanings, fillings, fluoride treatments, sealants.</p></div>
+        <div class="service-card"><i class="fa-solid fa-teeth"></i><h3>Cosmetic Dentistry</h3><p>Teeth whitening, veneers, bonding and smile makeovers.</p></div>
+        <div class="service-card"><i class="fa-solid fa-tooth-crack"></i><h3>Restorative Care</h3><p>Crowns, bridges, dentures, implants and root canals.</p></div>
+        <div class="service-card"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Oral Surgery</h3><p>Extractions, wisdom tooth removal, periodontal surgeries.</p></div>
+        <div class="service-card"><i class="fa-solid fa-child"></i><h3>Pediatric Dentistry</h3><p>Gentle care for kids – preventing cavities and building habits.</p></div>
+        <div class="service-card"><i class="fa-solid fa-user-shield"></i><h3>Emergency Dental Care</h3><p>Sudden pain or injuries? We provide rapid relief and solutions.</p></div>
       </div>
     </div>
   </section>
 
-  
-<!-- Our Doctors -->
-<section class="team" id="team" aria-label="Our Dental Team">
-  <div class="container">
-    <h4 class="team-subheading">OUR TEAM OF DOCTORS AT TOOTH PLANET</h4>
-    <h2 class="team-heading">A Promise of Excellence from Vizag’s Premier Dental Care Team</h2>
-    <p class="team-intro">
-      Your smile reflects your overall well-being. Maintaining excellent oral health is key to staying healthy and energized. We're here to care for your smile and your health with dedication and heart!
-    </p>
+  <!-- Team -->
+  <section class="team" id="team" aria-label="Our Dental Team">
+    <div class="container">
+      <h4 class="team-subheading">OUR TEAM OF DOCTORS AT TOOTH PLANET</h4>
+      <h2 class="team-heading">A Promise of Excellence from Vizag’s Premier Dental Care Team</h2>
+      <p class="team-intro">Your smile reflects your overall well-being. Maintaining excellent oral health is key to staying healthy and energized. We're here to care for your smile and your health with dedication and heart!</p>
 
-    <div class="team-grid">
-      <!-- Doctor Card Template -->
-      <div class="doctor-card">
-        <img src="assets/img/naveen.jpg" alt="Dr. Naveen Kumar" />
-        <h3>Dr. NAVEEN KUMAR</h3>
-        <p>MDS, Managing Director</p>
-      </div>
-      <div class="doctor-card">
-        <img src="assets/img/vijay.jpg" alt="Dr. Vijay" />
-        <h3>Dr. VIJAY</h3>
-        <p>MDS, Conservative Dentistry & Endodontics</p>
-      </div>
-      <div class="doctor-card">
-        <img src="assets/img/gupta.jpg" alt="Dr. Gupta Kandukuri" />
-        <h3>Dr. GUPTA KANDUKURI</h3>
-        <p>MDS, Periodontics</p>
-      </div>
-      <div class="doctor-card">
-        <img src="assets/img/roja.jpg" alt="Dr. Roja" />
-        <h3>Dr. ROJA</h3>
-        <p>MDS, Pedodontics</p>
-      </div>
-      <div class="doctor-card">
-        <img src="assets/img/raji.jpg" alt="Dr. Raji" />
-        <h3>Dr. RAJI</h3>
-        <p>MDS, Conservative Dentistry & Endodontics</p>
-      </div>
-      <div class="doctor-card">
-        <img src="assets/img/bhavana.jpg" alt="Dr. Bhavana" />
-        <h3>Dr. Bhavana</h3>
-        <p>MDS, Conservative Dentistry & Endodontics</p>
+      <div class="team-grid">
+        <div class="doctor-card"><img src="assets/img/naveen.jpg" alt="Dr. Naveen Kumar" /><h3>Dr. NAVEEN KUMAR</h3><p>MDS, Managing Director</p></div>
+        <div class="doctor-card"><img src="assets/img/vijay.jpg" alt="Dr. Vijay" /><h3>Dr. VIJAY</h3><p>MDS, Conservative Dentistry &amp; Endodontics</p></div>
+        <div class="doctor-card"><img src="assets/img/gupta.jpg" alt="Dr. Gupta Kandukuri" /><h3>Dr. GUPTA KANDUKURI</h3><p>MDS, Periodontics</p></div>
+        <div class="doctor-card"><img src="assets/img/roja.jpg" alt="Dr. Roja" /><h3>Dr. ROJA</h3><p>MDS, Pedodontics</p></div>
+        <div class="doctor-card"><img src="assets/img/raji.jpg" alt="Dr. Raji" /><h3>Dr. RAJI</h3><p>MDS, Conservative Dentistry &amp; Endodontics</p></div>
+        <div class="doctor-card"><img src="assets/img/bhavana.jpg" alt="Dr. Bhavana" /><h3>Dr. BHAVANA</h3><p>MDS, Conservative Dentistry &amp; Endodontics</p></div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Testimonials -->
   <section class="testimonials" id="testimonials" aria-label="Testimonials">
     <div class="container">
       <h2>What Our Patients Say</h2>
       <div class="testimonial__slider" id="testimonialSlider">
-        <div class="testimonial active">
-          <p>“I recently visited for a root canal treatment and had a great experience. Dr. Naveen Kumar was very approachable and took the time to clearly explain the procedure. The treatment cost was reasonable, and the center is well-equipped with a team of experienced professionals. Highly recommended!!”</p>
-          <h4>- Hemmant Rokkam </h4>
-        </div>
-        <div class="testimonial">
-          <p>“I recently visited Tooth Planet in MVP Colony, Vizag, and had an exceptional experience. Dr. Naveen is hands down the best dentist I’ve come across. He is highly skilled, patient, and took the time to explain every step of the procedure, making me feel completely at ease. The clinic is clean, well-equipped, and the staff is courteous and professional. I’m extremely satisfied with the treatment I received and would highly recommend this clinic to anyone looking for quality dental care in Vizag. Thank you, Dr. Naveen, for the great work!”</p>
-          <h4>- Motur Sudheer Kumar</h4>
-        </div>
-        <div class="testimonial">
-          <p>“I recently had a capping treatment at Tooth Planet, and I couldn't be more impressed with the experience. From the moment I walked in, the staff was friendly and professional, making me feel at ease. Dr. Naveen, in particular, is a true gentleman—he was very thorough in explaining the procedure and made sure I was comfortable throughout. His expertise and gentle approach were evident, and the treatment was completed with great care. I’m very pleased with the results, and my teeth feel as good as new. Highly recommend this clinic for anyone looking for quality dental care!”</p>
-          <h4>- Naveen Lotla</h4>
-        </div>
+        <div class="testimonial active"><p>“I recently visited for a root canal treatment and had a great experience. Dr. Naveen Kumar was very approachable and took the time to clearly explain the procedure. The treatment cost was reasonable, and the center is well-equipped with a team of experienced professionals. Highly recommended!!”</p><h4>- Hemmant Rokkam</h4></div>
+        <div class="testimonial"><p>“I recently visited Tooth Planet in MVP Colony, Vizag, and had an exceptional experience. Dr. Naveen is hands down the best dentist I’ve come across. He is highly skilled, patient, and took the time to explain every step of the procedure, making me feel completely at ease. The clinic is clean, well-equipped, and the staff is courteous and professional. I’m extremely satisfied with the treatment I received and would highly recommend this clinic to anyone looking for quality dental care in Vizag. Thank you, Dr. Naveen, for the great work!”</p><h4>- Motur Sudheer Kumar</h4></div>
+        <div class="testimonial"><p>“I recently had a capping treatment at Tooth Planet, and I couldn't be more impressed with the experience. From the moment I walked in, the staff was friendly and professional, making me feel at ease. Dr. Naveen, in particular, is a true gentleman—he was very thorough in explaining the procedure and made sure I was comfortable throughout. His expertise and gentle approach were evident, and the treatment was completed with great care. I’m very pleased with the results, and my teeth feel as good as new. Highly recommend this clinic for anyone looking for quality dental care!”</p><h4>- Naveen Lotla</h4></div>
       </div>
       <div class="testimonial__controls">
         <button class="prev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
@@ -222,65 +147,29 @@
     </div>
   </section>
 
-  <!-- Pricing / Treatment Charges -->
+  <!-- Pricing -->
   <section class="pricing" id="pricing" aria-label="Treatment Charges">
     <div class="container">
       <h2>Treatment Charges</h2>
       <p class="section-intro">Transparent pricing for common treatments. Contact us for a full quote.</p>
       <div class="pricing__grid">
-        <div class="price-card">
-          <h3>Basic Check-up</h3>
-          <p class="price">INR.500</p>
-          <ul>
-            <li>Examination</li>
-            <li>Cleaning</li>
-            <li>X-ray (if needed)</li>
-          </ul>
-        </div>
-        <div class="price-card popular">
-          <span class="tag">Popular</span>
-          <h3>Filling / Restoration</h3>
-          <p class="price">INR.2000+</p>
-          <ul>
-            <li>Composite fillings</li>
-            <li>Pain management</li>
-            <li>Follow-up visit</li>
-          </ul>
-        </div>
-        <div class="price-card">
-          <h3>Root Canal</h3>
-          <p class="price">INR.5000+</p>
-          <ul>
-            <li>Consultation & X-rays</li>
-            <li>Procedure & medication</li>
-            <li>Post-op follow-up</li>
-          </ul>
-        </div>
+        <div class="price-card"><h3>Basic Check-up</h3><p class="price">INR.500</p><ul><li>Examination</li><li>Cleaning</li><li>X-ray (if needed)</li></ul></div>
+        <div class="price-card popular"><span class="tag">Popular</span><h3>Filling / Restoration</h3><p class="price">INR.2000+</p><ul><li>Composite fillings</li><li>Pain management</li><li>Follow-up visit</li></ul></div>
+        <div class="price-card"><h3>Root Canal</h3><p class="price">INR.5000+</p><ul><li>Consultation &amp; X-rays</li><li>Procedure &amp; medication</li><li>Post-op follow-up</li></ul></div>
       </div>
     </div>
   </section>
 
-  <!-- Appointment Form -->
+  <!-- Appointment -->
   <section class="appointment" id="appointment" aria-label="Make an appointment">
     <div class="container">
       <h2>Make an Appointment</h2>
       <p class="section-intro">Fill out the form and we’ll contact you shortly.</p>
-
       <form id="appointmentForm" class="form">
-        <div class="form-group">
-          <label for="name">Full Name*</label>
-          <input type="text" id="name" name="name" required placeholder="Your full name" />
-        </div>
-        <div class="form-group">
-          <label for="email">Email*</label>
-          <input type="email" id="email" name="email" required placeholder="you@example.com" />
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone*</label>
-          <input type="tel" id="phone" name="phone" required placeholder="(+91) 9441755805" />
-        </div>
-        <div class="form-group">
-          <label for="service">Service</label>
+        <div class="form-group"><label for="name">Full Name*</label><input type="text" id="name" name="name" required placeholder="Your full name" /></div>
+        <div class="form-group"><label for="email">Email*</label><input type="email" id="email" name="email" required placeholder="you@example.com" /></div>
+        <div class="form-group"><label for="phone">Phone*</label><input type="tel" id="phone" name="phone" required placeholder="(+91) 9441755805" /></div>
+        <div class="form-group"><label for="service">Service</label>
           <select id="service" name="service">
             <option value="Basic Check-up">Basic Check-up</option>
             <option value="Filling / Restoration">Filling / Restoration</option>
@@ -289,16 +178,8 @@
             <option value="Other">Other</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="date">Preferred Date</label>
-          <input type="date" id="date" name="date" />
-        </div>
-        <div class="form-group full">
-          <label for="message">Additional Notes</label>
-          <textarea id="message" name="message" rows="4" placeholder="Tell us anything we should know"></textarea>
-        </div>
-        
-        <!-- 3) SUBMIT BUTTON LINKS TO GOOGLE FORM -->
+        <div class="form-group"><label for="date">Preferred Date</label><input type="date" id="date" name="date" /></div>
+        <div class="form-group full"><label for="message">Additional Notes</label><textarea id="message" name="message" rows="4" placeholder="Tell us anything we should know"></textarea></div>
         <button type="submit" class="btn-primary" id="gfSubmitBtn">Submit</button>
         <p class="form-status" id="formStatus" role="alert" aria-live="polite"></p>
       </form>
@@ -310,39 +191,34 @@
     <div class="container contact__grid">
       <div class="contact__info">
         <h2>Contact Us</h2>
-        <p><i class="fa-solid fa-location-dot"></i>Tooth Planet Laser & Implant Centre, Sasank Doctors Plaza,</p>
-        <p><i class="fa-solid fa-location-dot"></i>Near Gandhi Cancer Hospital & Research Institute, MVP Sector 3,</p>
-        <p><i class="fa-solid fa-location-dot"></i>MVP Colony, Visakhapatnam, Andhra Pradesh 530017, India</p>      
-        <p><i class="fa-solid fa-phone"></i><a href="tel:+919441755805">+91 9441 755 805</a></p>
-        <p><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/919441755805" target="_blank">+91 9441 755 805</a></p>
-        <p><i class="fa-solid fa-envelope"></i><a href="mailto:toothplanetvizag@gmail.com">toothplanetvizag@gmail.com</a></p>
-        <p><i class="fa-solid fa-clock"></i>Timings: Mon – Sat : 10:00AM – 1:00PM and 5:00PM - 9:00PM</p>
+        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Tooth Planet Laser &amp; Implant Centre, Sasank Doctors Plaza,</p>
+        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Near Gandhi Cancer Hospital &amp; Research Institute, MVP Sector 3,</p>
+        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> MVP Colony, Visakhapatnam, Andhra Pradesh 530017, India</p>
+        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+919441755805">+91 9441 755 805</a></p>
+        <p><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/919441755805" target="_blank" rel="noopener">+91 9441 755 805</a></p>
+        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:toothplanetvizag@gmail.com">toothplanetvizag@gmail.com</a></p>
+        <p><i class="fa-solid fa-clock" aria-hidden="true"></i> Timings: Mon – Sat : 10:00AM – 1:00PM and 5:00PM - 9:00PM</p>
       </div>
       <div class="contact__map">
-    <iframe
-    title="Tooth Planet Laser & Implant Centre – Best Dental Clinic in Vizag"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2063216447315!2d83.3315942!3d17.7414984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a394331b7adc4ab%3A0x18c46ea150e3be5e!2sTooth%20Planet%20Laser%20%26%20Implant%20Centre%20%7C%20Best%20Dental%20Clinic%20in%20Vizag!5e0!3m2!1sen!2sin!4v1690401809403!5m2!1sen!2sin"
-    width="100%"
-    height="380"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+        <iframe title="Tooth Planet Laser &amp; Implant Centre – Best Dental Clinic in Vizag"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2063216447315!2d83.3315942!3d17.7414984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a394331b7adc4ab%3A0x18c46ea150e3be5e!2sTooth%20Planet%20Laser%20%26%20Implant%20Centre%20%7C%20Best%20Dental%20Clinic%20in%20Vizag!5e0!3m2!1sen!2sin!4v1690401809403!5m2!1sen!2sin"
+          width="100%" height="380" style="border:0;" allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__flex">
-      <p>&copy; <span id="year"></span>ToothPlanet Dental Clinic. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> ToothPlanet Dental Clinic. All rights reserved.</p>
       <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
   </footer>
 
   <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/919441755805" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-whatsapp"></i>
   </a>
 
   <script src="assets/js/script.js"></script>
